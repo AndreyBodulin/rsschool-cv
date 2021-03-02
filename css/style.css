@@ -1,0 +1,27 @@
+.case {
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.case h1{
+    display: block;
+    position: relative;
+    text-align: center;
+    right: 20px;
+}
+
+.photo {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    border-radius: 10%;
+}
+
+ul li {
+    list-style: none;
+    font-size: 25px;
+    margin-top: 10px;
+}
