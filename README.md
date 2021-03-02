@@ -1,1 +1,1 @@
-# rsschool-cv
+https://andreybodulin.github.io/rsschool-cv/
