@@ -1,7 +1,11 @@
 .case {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    right: 10px;
+    top:10px;
     width: 400px;
     height: 600px;
-    margin: 0 auto;
     border: 2px solid black;
 }
 
@@ -9,7 +13,6 @@
     display: block;
     position: relative;
     text-align: center;
-    right: 20px;
 }
 
 .photo {
@@ -18,10 +21,45 @@
     height: 50%;
     margin: 0 auto;
     border-radius: 10%;
+    box-shadow: 4px 6px 8px black;
 }
 
-ul li {
+.case ul li {
     list-style: none;
     font-size: 25px;
     margin-top: 10px;
+}
+
+p {
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    color: blue;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+.about_me {
+    display: block;
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    top: -20px;
+}
+
+.about_me h1{
+    text-align: center;
+}
+
+.about_me p{
+    font-size: 20px;
+    margin: 5px 4px;
+}
+
+.about_me li{
+    font-size: 20px;
 }
