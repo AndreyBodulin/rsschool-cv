@@ -1,65 +1,97 @@
-.case {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    right: 10px;
-    top:10px;
-    width: 400px;
-    height: 600px;
-    border: 2px solid black;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.case h1{
-    display: block;
-    position: relative;
-    text-align: center;
+.resumeCard {  
+    background: url(https://littlevisuals.co/images/float.jpg) no-repeat center center;
+    background-size: cover;
+    height: 600px;
+}
+
+.resumeCard__header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.left_side {
+    display: flex;
+    width: 110px;
+    justify-content: center;
+}
+
+.right_side {
+    display: flex;
+    justify-content: space-around;
+    width: 740px;
+}
+
+.right_side a, .left_side a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 90px;
+    background-color: white;
+    text-decoration: none;
+    padding: 4px;
+    font-size: 20px;
+    color: #000000;
+    opacity: 0.7;
+    transition-duration: 0.6s;
+}
+
+.right_side a:first-child{
+    text-decoration: none;
+    border: 1px solid white; 
+}
+
+.right_side a:hover{
+    opacity: 1;
+    box-shadow: 2px 4px 5px black;
+}
+
+.resumeCard__content {
+    display: flex;
+    width: inherit;
+    justify-content: center;
+}
+
+.content__ls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    width: 300px;
+    height: 250px;
+}
+
+.content__ls h1{
+    margin-top: 15px;
 }
 
 .photo {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.content__rs {
+    width: 450px;
+    height: 300px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.content__rs h2{
     display: block;
-    width: 50%;
-    height: 50%;
-    margin: 0 auto;
-    border-radius: 10%;
-    box-shadow: 4px 6px 8px black;
-}
-
-.case ul li {
-    list-style: none;
-    font-size: 25px;
-    margin-top: 10px;
-}
-
-p {
-    display: inline-block;
-}
-
-li a {
-    text-decoration: none;
-    color: blue;
-}
-
-li a:hover{
-    text-decoration: underline;
-}
-
-.about_me {
-    display: block;
-    position: relative;
-    width: 1000px;
-    height: 500px;
-    top: -20px;
-}
-
-.about_me h1{
-    text-align: center;
-}
-
-.about_me p{
-    font-size: 20px;
-    margin: 5px 4px;
-}
-
-.about_me li{
-    font-size: 20px;
+    width: 70px;
+    background-color: black;
+    font-size: 30px;
+    padding: 10px;
 }
